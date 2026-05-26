@@ -1,0 +1,24 @@
+<html>
+<html lang="es">
+<head>
+
+<meta charset="UTF"-8>
+<title>TENIS ADIDAS</title>
+</head>
+<body style="background-image:url('te.jpg');background-size:cover;background-repeat:no-repeat;color:white;">
+<br><br><br>
+
+
+
+
+
+
+<a href="TIENDA DE TENIS.html">
+<button style="font-size:24px; padding:15px 48px;background-color;white;color lime; border:2px solid white; font-weight:bold;">
+  SIGUIENTE
+</button>
+</a>
+</center>
+
+</body>
+</html>
