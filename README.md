@@ -32,9 +32,9 @@
         </button>
     </div>
 
-    <div id="pantalla-siguiente" style="display: none; background-image: url('te.jpg'); background-size: cover; background-repeat: no-repeat; min-height: 100vh; text-align: center; padding-top: 100px;">
-        
-        <button onclick="mostrarSeccion('tienda-principal')" style="font-size: 24px; padding: 15px 48px; background-color: white; color: lime; border: 2px solid white; font-weight: bold; cursor: pointer;">
+     <div id="pantalla-siguiente" style="display: none; background-image: url('te.jpg'); background-size: cover; background-repeat: no-repeat; min-height: 100vh; text-align: center; padding-top: 100px;">
+        <h2 style="font-size: 40px; margin-bottom: 50px;">¡Explora las mejores marcas!</h2>
+             <button onclick="mostrarSeccion('tienda-principal')" style="font-size: 24px; padding: 15px 48px; background-color: white; color: lime; border: 2px solid white; font-weight: bold; cursor: pointer;">
             SIGUIENTE
         </button>
     </div>
