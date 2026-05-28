@@ -1,11 +1,14 @@
+```html id="zk4p7v"
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TIENDA DE TENIS</title>
 
     <script>
+
         let total = 0;
 
         function agregarCarrito(nombre, precio) {
@@ -34,21 +37,17 @@
             document.getElementById("lista-carrito").innerHTML = "";
         }
 
-        function mostrarSeccion(idSeccion) {
+        function mostrarSeccion() {
 
             document.getElementById('inicio-bienvenida')
                 .style.display = 'none';
 
-            document.getElementById('pantalla-siguiente')
-                .style.display = 'none';
-
             document.getElementById('tienda-principal')
-                .style.display = 'none';
-
-            document.getElementById(idSeccion)
                 .style.display = 'block';
         }
+
     </script>
+
 </head>
 
 <body style="
@@ -58,6 +57,8 @@
     margin:0;
     padding:0;
 ">
+
+    <!-- INICIO -->
 
     <div id="inicio-bienvenida"
         style="
@@ -79,7 +80,7 @@
         </h1>
 
         <button
-            onclick="mostrarSeccion('pantalla-siguiente')"
+            onclick="mostrarSeccion()"
             style="
             font-size:24px;
             padding:15px 40px;
@@ -94,46 +95,7 @@
 
     </div>
 
-    <!-- PANTALLA SIGUIENTE -->
-
-    <div id="pantalla-siguiente"
-        style="
-        display:none;
-        min-height:100vh;
-        text-align:center;
-        padding-top:120px;
-    ">
-
-        <h1 style="
-            font-size:50px;
-            color:yellow;
-        ">
-            👟 BIENVENIDO
-        </h1>
-
-        <p style="
-            font-size:28px;
-        ">
-            Las mejores marcas al mejor precio
-        </p>
-
-        <button
-            onclick="mostrarSeccion('tienda-principal')"
-            style="
-            font-size:24px;
-            padding:15px 48px;
-            background:white;
-            color:lime;
-            border:2px solid white;
-            font-weight:bold;
-            cursor:pointer;
-        ">
-            SIGUIENTE
-        </button>
-
-    </div>
-
-    <!-- TIENDA PRINCIPAL -->
+    <!-- TIENDA -->
 
     <div id="tienda-principal"
         style="
@@ -304,9 +266,7 @@
                 <h2>🛒 CARRITO</h2>
 
                 <ul id="lista-carrito"
-                    style="
-                    text-align:left;
-                ">
+                    style="text-align:left;">
                 </ul>
 
                 <h3>
@@ -356,6 +316,7 @@
                 </p>
 
                 <p>
+
                     <input type="text"
                         placeholder="MM/AA"
                         style="
@@ -369,15 +330,18 @@
                         padding:10px;
                         width:80px;
                     ">
+
                 </p>
 
                 <p>
+
                     <input type="text"
                         placeholder="Nombre completo"
                         style="
                         padding:10px;
                         width:80%;
                     ">
+
                 </p>
 
                 <button
